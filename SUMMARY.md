@@ -4,32 +4,44 @@
 
 - [소개](README.md)
 - [문서 템플릿](TEMPLATE.md)
-- [전체 질문 목록](QUESTION_BANK.md)
-- [참고 저장소](REFERENCES.md)
+- [참고 repo](REFERENCES.md)
 
-## Backend Core
-
-- [Backend](backend/README.md)
-- [Database](database/README.md)
-- [Network](network/README.md)
-- [Operating System](operating-system/README.md)
-- [Programming Language](programming-language/README.md)
-- [Software Engineering](software-engineering/README.md)
-- [System Design](system-design/README.md)
-- [Security](security/README.md)
-- [DevOps](devops/README.md)
+---
 
 ## Computer Science
 
 - [Data Structure](data-structure/README.md)
 - [Algorithm](algorithm/README.md)
 - [Computer Architecture](computer-architecture/README.md)
+- [Network](network/README.md)
+- [Operating System](operating-system/README.md)
+- [Programming Language](programming-language/README.md)
 
-## Platform
+## Database
+
+- [Database](database/README.md)
+
+
+## Backend
+
+- [Spring](backend/README.md)
+- [JPA](backend/README.md)
+- [Redis](backend/README.md)
+
+## Frontend
 
 - [Frontend](frontend/README.md)
+- [React](frontend/README.md)
+
+## Mobile
+
 - [Android](android/README.md)
+    - [Activity가 Single 인스턴스로 유지되려면 어떻게 해야될까?](android/singleInstance.md) 
 
-## Etc
+## ETC
 
-- [Etc](etc/README.md)
+- [Software Engineering](software-engineering/README.md)
+- [System Design](system-design/README.md)
+- [Security](security/README.md)
+- [DevOps](devops/README.md)
+- [ETC](etc/README.md)
