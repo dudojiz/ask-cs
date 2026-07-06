@@ -2,7 +2,7 @@
 
 프론트엔드와 백엔드 협업에 필요한 웹 기본 지식을 정리합니다.
 
-백엔드 개발자가 우선 이해해야 할 질문:
+## 질문 목록
 
 - SPA란 무엇인가요?
 - CSR과 SSR의 차이는 무엇인가요?
@@ -13,157 +13,154 @@
 - XSS와 CSRF는 각각 어떻게 방어하나요?
 - 백엔드 API 응답이 느리면 프론트엔드 사용성에 어떤 영향이 있나요?
 - 백엔드와 프론트엔드가 API 계약을 안정적으로 관리하려면 어떻게 해야 하나요?
-
-## 레퍼런스 기반 질문 후보
-
-- [\<a> 태그를 이용해 외부 페이지를 열 때 보안상 고려해야 할 점은 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-96.md) (maeil-mail)
-- [결합도와 응집도에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-120.md) (maeil-mail)
-- [관계형 데이터베이스와 비관계형 데이터베이스에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-127.md) (maeil-mail)
-- [길이 단위 px, em, rem에 대해 각각 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-56.md) (maeil-mail)
-- [낙관적 업데이트에 관하여 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-29.md) (maeil-mail)
-- [네트워크 통신에서 Body(Payload)와 Header의 차이는 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-53.md) (maeil-mail)
-- [다음 리액트 코드의 실행 순서에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-144.md) (maeil-mail)
-- [다음 JS 코드의 실행 결과를 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-73.md) (maeil-mail)
-- [다음 Promise 코드의 실행 결과를 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-102.md) (maeil-mail)
-- [동적 타입 언어와 정적 타입 언어에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-111.md) (maeil-mail)
-- [디바운스와 쓰로틀에 대해서 각각 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-20.md) (maeil-mail)
-- [리액트 동시성 모드(Concurrent Mode)에 관해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-42.md) (maeil-mail)
-- [리액트에서 변수 관리 시 useRef를 사용하는 것은 let을 사용하는 것과 어떤 차이가 있나요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-100.md) (maeil-mail)
-- [리액트에서 성능 최적화를 위해 적용할 수 있는 방법들을 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-8.md) (maeil-mail)
-- [리액트에서 컴포넌트가 불필요하게 리렌더링되는 상황을 방지하기 위한 방법을 설명해 주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-41.md) (maeil-mail)
-- [리액트에서 컴포넌트란 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-48.md) (maeil-mail)
-- [리액트에서 index를 key값으로 사용하면 안되는 이유에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-21.md) (maeil-mail)
-- [리액트의 Batching Update에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-139.md) (maeil-mail)
-- [리액트의 Controlled Component와 Uncontrolled Component의 차이점에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-7.md) (maeil-mail)
-- [리액트의 props와 state에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-6.md) (maeil-mail)
-- [리액트의 render phase와 commit phase에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-12.md) (maeil-mail)
-- [리액트의 Strict Mode에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-11.md) (maeil-mail)
-- [멀티 프로세스와 멀티 스레드에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-131.md) (maeil-mail)
-- [모노레포란 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-81.md) (maeil-mail)
-- [백엔드 API의 응답이 느려 사용성에 악영향이 발생하는 상황에서 어떻게 대응하실 건가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-142.md) (maeil-mail)
-- [불변성(Immutability)이란 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-89.md) (maeil-mail)
-- [브라우저 렌더링 파이프라인에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-9.md) (maeil-mail)
-- [브라우저 메모리 캐시와 디스크 캐시가 무엇인지 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-101.md) (maeil-mail)
-- [브라우저가 폰트를 적용하는 과정을 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-106.md) (maeil-mail)
-- [상황에 따라 this 바인딩이 어떻게 이뤄지는지 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-77.md) (maeil-mail)
-- [서버 사이드 렌더링과 클라이언트 사이드 렌더링의 차이점은 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/backend/contents/be-45.md) (maeil-mail)
-- [서버 컴포넌트에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-50.md) (maeil-mail)
-- [스택을 활용하여 브라우저의 뒤로가기/앞으로가기 기능을 구현하는 방법을 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-146.md) (maeil-mail)
-- [시맨틱 마크업이란 무엇이며, 왜 중요한가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-32.md) (maeil-mail)
-- [실행 컨텍스트에 대해서 설명해주세요](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-3.md) (maeil-mail)
-- [쌓임 맥락에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-75.md) (maeil-mail)
-- [알고 계신 git 브랜치 전략들에 대해 소개해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-82.md) (maeil-mail)
-- [알고 있는 이미지 포맷과 각 포맷별 특징을 알려주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-66.md) (maeil-mail)
-- [예상치 못하게 외부 라이브러리의 버그로 인해 기능에 문제가 생겼다면, 어떤 절차로 해결하실 건가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-143.md) (maeil-mail)
-- [왜 기본 img 태그 대신 next/Image를 사용하셨나요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-103.md) (maeil-mail)
-- [왜 useState를 조건문 안에서 사용하면 안 되나요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-85.md) (maeil-mail)
-- [웹 애플리케이션의 성능을 최적화할 수 있는 방법들에 대해서 아는대로 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-19.md) (maeil-mail)
-- [웹 접근성의 개념과 개선 방법에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-24.md) (maeil-mail)
-- [웹뷰(WebView)란 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-99.md) (maeil-mail)
-- [웹표준이 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-140.md) (maeil-mail)
-- [위치를 동적으로 변경할 때 css 속성 중 transform과 position 중 어떤 것을 선호하시나요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-71.md) (maeil-mail)
-- [이미지 크기가 클 경우 렌더링 속도가 느려질 텐데, 이를 개선하기 위한 방법들을 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-28.md) (maeil-mail)
-- [이벤트 루프에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-5.md) (maeil-mail)
-- [이벤트 버블링과 캡처링에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-47.md) (maeil-mail)
-- [이벤트 전파(event propagation)에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-18.md) (maeil-mail)
-- [이터러블 프로토콜에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-135.md) (maeil-mail)
-- [인증과 인가에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-92.md) (maeil-mail)
-- [인터넷 창에 www.google.com를 입력하면 무슨 일이 일어나는지 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-10.md) (maeil-mail)
-- [자바스크립트 배열에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-14.md) (maeil-mail)
-- [자바스크립트 클래스의 접근제어자에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-55.md) (maeil-mail)
-- [자바스크립트 함수에 대해서 아는대로 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-15.md) (maeil-mail)
-- [자바스크립트 호이스팅에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-13.md) (maeil-mail)
-- [자바스크립트 Promise에 대해서 아는 대로 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-35.md) (maeil-mail)
-- [자바스크립트는 싱글 스레드 언어인데, 어떻게 동시에 여러 작업들을 수행하나요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-30.md) (maeil-mail)
-- [자바스크립트에서 "0.1 + 0.2 === 0.3"의 실행 결과에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-108.md) (maeil-mail)
-- [자바스크립트에서 메모리 누수가 발생하는 상황들을 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-115.md) (maeil-mail)
-- [자바스크립트에서 생성자 함수가 무엇인지, class 문법은 왜 도입되었는지 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-121.md) (maeil-mail)
-- [자바스크립트에서 어떻게 호이스팅이 가능한지에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-22.md) (maeil-mail)
-- [자바스크립트의 메모리 관리에 대해서 아는대로 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-122.md) (maeil-mail)
-- [전역 상태 관리 라이브러리는 왜 사용하나요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-61.md) (maeil-mail)
-- [제네레이터에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-136.md) (maeil-mail)
-- [제로 런타임 css란 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-54.md) (maeil-mail)
-- [최신 버전의 Next.js가 제공하는 캐싱 기능들에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-118.md) (maeil-mail)
-- [커링(currying)이란 무엇인지 설명하고, 활용 예시를 들어줄 수 있나요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-129.md) (maeil-mail)
-- [쿠키와 세션에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-145.md) (maeil-mail)
-- [클라이언트 사이드 라우팅이 동작하는 과정에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-126.md) (maeil-mail)
-- [클로저에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-1.md) (maeil-mail)
-- [타입 단언이란 무엇이며 언제 사용하나요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-78.md) (maeil-mail)
-- [타입스크립트 satisfies 키워드에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-112.md) (maeil-mail)
-- [타입스크립트를 사용하는 이유를 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-49.md) (maeil-mail)
-- [타입스크립트의 타입과 인터페이스의 차이점을 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-31.md) (maeil-mail)
-- [타입스크립트의 infer 키워드에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-95.md) (maeil-mail)
-- [테스트하기 쉬운 코드의 조건들에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-97.md) (maeil-mail)
-- [트리 쉐이킹에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-110.md) (maeil-mail)
-- [패키지 매니저 pnpm과 yarn berry에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-91.md) (maeil-mail)
-- [퍼포먼스를 분석할 때 Chrome DevTools에서 어떤 지표를 체크해야 하나요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-150.md) (maeil-mail)
-- [프로토타입 상속의 동작 방식에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-65.md) (maeil-mail)
-- [프론트엔드 E2E 테스트에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-27.md) (maeil-mail)
-- [함수 선언식과 함수 표현식의 차이점에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-37.md) (maeil-mail)
-- [함수형 프로그래밍에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-107.md) (maeil-mail)
-- [효과적으로 디버깅하기 위한 방법에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-84.md) (maeil-mail)
-- [BFF(Backend For Frontend)란 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-94.md) (maeil-mail)
-- [Cache-Control 헤더에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-98.md) (maeil-mail)
-- [CDN이 무엇인지 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-59.md) (maeil-mail)
-- [CI/CD란 무엇인지 설명해주세요](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-70.md) (maeil-mail)
-- [CommonJS와 ES Module의 차이점에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-17.md) (maeil-mail)
-- [Content-Type 헤더에 대해서 설명해주세요](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-88.md) (maeil-mail)
-- [Core Web Vitals란 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-109.md) (maeil-mail)
-- [CORS 설정 없이 SOP를 우회하여 외부 서버와 통신할 수 있는 방법이 있을까요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-68.md) (maeil-mail)
-- [CORS(Cross-Origin Resource Sharing)는 무엇이며 왜 필요한가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-40.md) (maeil-mail)
-- [CSS 명시도(Specificity)에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-114.md) (maeil-mail)
-- [css 속성 dvh, svh, lvh 란 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-104.md) (maeil-mail)
-- [CSS 의사 요소(Pseudo-elements)란 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-86.md) (maeil-mail)
-- [CSS 전처리기(CSS preprocessor)란 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-83.md) (maeil-mail)
-- [css box-sizing 속성에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-67.md) (maeil-mail)
-- [CSS Flexbox와 Grid의 차이점에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-26.md) (maeil-mail)
-- [dependency, devDependency, peerDependency에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-116.md) (maeil-mail)
-- [Error Boundary가 무엇이며, 이를 사용하는 이유는 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-39.md) (maeil-mail)
-- [ES6에 대해서 아는 대로 설명해 주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-36.md) (maeil-mail)
-- [event.target과 event.currentTarget의 차이점은 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-58.md) (maeil-mail)
-- [HTML 데이터 속성(data-)은 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-57.md) (maeil-mail)
-- [HTML Doctype이 무엇인지 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-60.md) (maeil-mail)
-- [HTML link 요소의 rel 속성 값 preconnect, preload, prefetch에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-76.md) (maeil-mail)
-- [HTTP/2의 특징에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-130.md) (maeil-mail)
-- [HTTP란 무엇인지 설명해 주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-52.md) (maeil-mail)
-- [HTTP의 ETag에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-124.md) (maeil-mail)
-- [image 요소의 alt 속성은 어떤 목적으로 사용하나요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-80.md) (maeil-mail)
-- [JSON Schema에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-125.md) (maeil-mail)
-- [jsx란 무엇이며, 이는 자바스크립트에서 어떻게 변환되나요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-113.md) (maeil-mail)
-- [JWT(Json Web Token)의 장점은 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-87.md) (maeil-mail)
-- [localStorage와 sessionStorage의 차이점에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-44.md) (maeil-mail)
-- [never와 unknown 타입에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-105.md) (maeil-mail)
-- [Next.js Middleware에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-149.md) (maeil-mail)
-- [Next.js를 사용하는 이유가 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-72.md) (maeil-mail)
-- [Node.js의 주요 특징에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-132.md) (maeil-mail)
-- [Node와 Element의 차이에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-62.md) (maeil-mail)
-- [npm install과 npm ci의 차이점에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-93.md) (maeil-mail)
-- [OSI 7계층에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-123.md) (maeil-mail)
-- [Progressive Partial Rendering(PPR)에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-133.md) (maeil-mail)
-- [Promise의 resolve()와 fulfilled에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-38.md) (maeil-mail)
-- [React의 리렌더링 과정에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-141.md) (maeil-mail)
-- [React의 Error Boundary는 왜 비동기 에러를 잡지 못하나요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-147.md) (maeil-mail)
-- [reflow와 repaint의 차이점에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-2.md) (maeil-mail)
-- [requestAnimationFrame에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-90.md) (maeil-mail)
-- [Reset CSS와 Normalize CSS가 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-79.md) (maeil-mail)
-- [script 태그에서 async와 defer의 차이점에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-16.md) (maeil-mail)
-- [Server Action이란 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-74.md) (maeil-mail)
-- [SSR(Server Side Rendering)에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-25.md) (maeil-mail)
-- [stale-while-revalidate에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-128.md) (maeil-mail)
-- [Storybook을 알고 계신가요? Storybook이란 무엇인지 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-117.md) (maeil-mail)
-- [Streaming SSR에 관하여 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-51.md) (maeil-mail)
-- [Tanstack Query를 사용하는 이유를 설명해 주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-45.md) (maeil-mail)
-- [tanstack-query에서 stale time과 gc time의 차이점에 대해서 설명해주세요](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-4.md) (maeil-mail)
-- [TCP 3-way handshake 과정에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-119.md) (maeil-mail)
-- [TDD란 무엇인지 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-64.md) (maeil-mail)
-- [TLS 핸드셰이크 과정에 대해 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-137.md) (maeil-mail)
-- [undefined와 null의 차이점에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-33.md) (maeil-mail)
-- [useEffect가 호출되는 시점에 대해 설명해 주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-34.md) (maeil-mail)
-- [useEffect를 이용하여 로딩 상태 관리하는 방법과 Suspense를 활용하는 방법에 대한 차이점을 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-43.md) (maeil-mail)
-- [useEffect와 useLayoutEffect의 차이점에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-23.md) (maeil-mail)
-- [User-Agent에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-138.md) (maeil-mail)
-- [useRef는 언제 사용하나요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-63.md) (maeil-mail)
-- [Virtual DOM에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-69.md) (maeil-mail)
-- [webpack, rollup과 같은 번들러는 왜 필요한지 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-46.md) (maeil-mail)
-- [XSS 공격이란 무엇이며, 프론트엔드에서 이를 방어하기 위한 방법을 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-134.md) (maeil-mail)
-- [Yarn과 Yarn Berry의 차이점에 대해서 설명해주세요.](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/contents/fe-148.md) (maeil-mail)
+- <a> 태그를 이용해 외부 페이지를 열 때 보안상 고려해야 할 점은 무엇인가요?
+- 결합도와 응집도에 대해 설명해주세요.
+- 관계형 데이터베이스와 비관계형 데이터베이스에 대해 설명해주세요.
+- 길이 단위 px, em, rem에 대해 각각 설명해주세요.
+- 낙관적 업데이트에 관하여 설명해주세요.
+- 네트워크 통신에서 Body(Payload)와 Header의 차이는 무엇인가요?
+- 다음 리액트 코드의 실행 순서에 대해 설명해주세요.
+- 다음 JS 코드의 실행 결과를 설명해주세요.
+- 다음 Promise 코드의 실행 결과를 설명해주세요.
+- 동적 타입 언어와 정적 타입 언어에 대해 설명해주세요.
+- 디바운스와 쓰로틀에 대해서 각각 설명해주세요.
+- 리액트 동시성 모드(Concurrent Mode)에 관해서 설명해주세요.
+- 리액트에서 변수 관리 시 useRef를 사용하는 것은 let을 사용하는 것과 어떤 차이가 있나요?
+- 리액트에서 성능 최적화를 위해 적용할 수 있는 방법들을 설명해주세요.
+- 리액트에서 컴포넌트가 불필요하게 리렌더링되는 상황을 방지하기 위한 방법을 설명해주세요.
+- 리액트에서 컴포넌트란 무엇인가요?
+- 리액트에서 index를 key값으로 사용하면 안되는 이유에 대해 설명해주세요.
+- 리액트의 Batching Update에 대해 설명해주세요.
+- 리액트의 Controlled Component와 Uncontrolled Component의 차이점에 대해 설명해주세요.
+- 리액트의 props와 state에 대해 설명해주세요.
+- 리액트의 render phase와 commit phase에 대해 설명해주세요.
+- 리액트의 Strict Mode에 대해 설명해주세요.
+- 멀티 프로세스와 멀티 스레드에 대해 설명해주세요.
+- 모노레포란 무엇인가요?
+- 백엔드 API의 응답이 느려 사용성에 악영향이 발생하는 상황에서 어떻게 대응하실 건가요?
+- 불변성(Immutability)이란 무엇인가요?
+- 브라우저 렌더링 파이프라인에 대해 설명해주세요.
+- 브라우저 메모리 캐시와 디스크 캐시가 무엇인지 설명해주세요.
+- 브라우저가 폰트를 적용하는 과정을 설명해주세요.
+- 상황에 따라 this 바인딩이 어떻게 이뤄지는지 설명해주세요.
+- 서버 사이드 렌더링과 클라이언트 사이드 렌더링의 차이는 무엇인가요?
+- 서버 컴포넌트에 대해 설명해주세요.
+- 스택을 활용하여 브라우저의 뒤로가기/앞으로가기 기능을 구현하는 방법을 설명해주세요.
+- 시맨틱 마크업이란 무엇이며, 왜 중요한가요?
+- 실행 컨텍스트에 대해 설명해주세요.
+- 쌓임 맥락에 대해 설명해주세요.
+- 알고 계신 git 브랜치 전략들에 대해 소개해주세요.
+- 알고 있는 이미지 포맷과 각 포맷별 특징을 알려주세요.
+- 예상치 못하게 외부 라이브러리의 버그로 인해 기능에 문제가 생겼다면, 어떤 절차로 해결하실 건가요?
+- 왜 기본 img 태그 대신 next/Image를 사용하셨나요?
+- 왜 useState를 조건문 안에서 사용하면 안 되나요?
+- 웹 애플리케이션의 성능을 최적화할 수 있는 방법들에 대해서 아는 대로 설명해주세요.
+- 웹 접근성의 개념과 개선 방법에 대해 설명해주세요.
+- 웹뷰(WebView)란 무엇인가요?
+- 웹표준이 무엇인가요?
+- 위치를 동적으로 변경할 때 css 속성 중 transform과 position 중 어떤 것을 선호하시나요?
+- 이미지 크기가 클 경우 렌더링 속도가 느려질 텐데, 이를 개선하기 위한 방법들을 설명해주세요.
+- 이벤트 루프에 대해 설명해주세요.
+- 이벤트 버블링과 캡처링에 대해 설명해주세요.
+- 이벤트 전파(event propagation)에 대해 설명해주세요.
+- 이터러블 프로토콜에 대해 설명해주세요.
+- 인증과 인가에 대해 설명해주세요.
+- 인터넷 창에 www.google.com를 입력하면 무슨 일이 일어나는지 설명해주세요.
+- 자바스크립트 배열에 대해 설명해주세요.
+- 자바스크립트 클래스의 접근제어자에 대해 설명해주세요.
+- 자바스크립트 함수에 대해서 아는 대로 설명해주세요.
+- 자바스크립트 호이스팅에 대해 설명해주세요.
+- 자바스크립트 Promise에 대해서 아는 대로 설명해주세요.
+- 자바스크립트는 싱글 스레드 언어인데, 어떻게 동시에 여러 작업들을 수행하나요?
+- 자바스크립트에서 "0.1 + 0.2 === 0.3"의 실행 결과에 대해 설명해주세요.
+- 자바스크립트에서 메모리 누수가 발생하는 상황들을 설명해주세요.
+- 자바스크립트에서 생성자 함수가 무엇인지, class 문법은 왜 도입되었는지 설명해주세요.
+- 자바스크립트에서 어떻게 호이스팅이 가능한지에 대해 설명해주세요.
+- 자바스크립트의 메모리 관리에 대해서 아는 대로 설명해주세요.
+- 전역 상태 관리 라이브러리는 왜 사용하나요?
+- 제네레이터에 대해 설명해주세요.
+- 제로 런타임 css란 무엇인가요?
+- 최신 버전의 Next.js가 제공하는 캐싱 기능들에 대해 설명해주세요.
+- 커링(currying)이란 무엇인지 설명하고, 활용 예시를 들어줄 수 있나요?
+- 쿠키와 세션에 대해 설명해주세요.
+- 클라이언트 사이드 라우팅이 동작하는 과정에 대해 설명해주세요.
+- 클로저에 대해 설명해주세요.
+- 타입 단언이란 무엇이며 언제 사용하나요?
+- 타입스크립트 satisfies 키워드에 대해 설명해주세요.
+- 타입스크립트를 사용하는 이유를 설명해주세요.
+- 타입스크립트의 타입과 인터페이스의 차이점을 설명해주세요.
+- 타입스크립트의 infer 키워드에 대해 설명해주세요.
+- 테스트하기 쉬운 코드의 조건들에 대해 설명해주세요.
+- 트리 쉐이킹에 대해 설명해주세요.
+- 패키지 매니저 pnpm과 yarn berry에 대해 설명해주세요.
+- 퍼포먼스를 분석할 때 Chrome DevTools에서 어떤 지표를 체크해야 하나요?
+- 프로토타입 상속의 동작 방식에 대해 설명해주세요.
+- 프론트엔드 E2E 테스트에 대해 설명해주세요.
+- 함수 선언식과 함수 표현식의 차이점에 대해 설명해주세요.
+- 함수형 프로그래밍에 대해 설명해주세요.
+- 효과적으로 디버깅하기 위한 방법에 대해 설명해주세요.
+- BFF(Backend For Frontend)란 무엇인가요?
+- Cache-Control 헤더에 대해 설명해주세요.
+- CDN이 무엇인지 설명해주세요.
+- CI/CD란 무엇인지 설명해주세요.
+- CommonJS와 ES Module의 차이점에 대해 설명해주세요.
+- Content-Type 헤더에 대해 설명해주세요.
+- Core Web Vitals란 무엇인가요?
+- CORS 설정 없이 SOP를 우회하여 외부 서버와 통신할 수 있는 방법이 있을까요?
+- CORS(Cross-Origin Resource Sharing)는 무엇이며 왜 필요한가요?
+- CSS 명시도(Specificity)에 대해 설명해주세요.
+- css 속성 dvh, svh, lvh 란 무엇인가요?
+- CSS 의사 요소(Pseudo-elements)란 무엇인가요?
+- CSS 전처리기(CSS preprocessor)란 무엇인가요?
+- css box-sizing 속성에 대해 설명해주세요.
+- CSS Flexbox와 Grid의 차이점에 대해 설명해주세요.
+- dependency, devDependency, peerDependency에 대해 설명해주세요.
+- Error Boundary가 무엇이며, 이를 사용하는 이유는 무엇인가요?
+- ES6에 대해서 아는 대로 설명해주세요.
+- event.target과 event.currentTarget의 차이는 무엇인가요?
+- HTML 데이터 속성(data-)은 무엇인가요?
+- HTML Doctype이 무엇인지 설명해주세요.
+- HTML link 요소의 rel 속성 값 preconnect, preload, prefetch에 대해 설명해주세요.
+- HTTP/2의 특징에 대해 설명해주세요.
+- HTTP란 무엇인지 설명해주세요.
+- HTTP의 ETag에 대해 설명해주세요.
+- image 요소의 alt 속성은 어떤 목적으로 사용하나요?
+- JSON Schema에 대해 설명해주세요.
+- jsx란 무엇이며, 이는 자바스크립트에서 어떻게 변환되나요?
+- JWT(Json Web Token)의 장점은 무엇인가요?
+- localStorage와 sessionStorage의 차이점에 대해 설명해주세요.
+- never와 unknown 타입에 대해 설명해주세요.
+- Next.js Middleware에 대해 설명해주세요.
+- Next.js를 사용하는 이유가 무엇인가요?
+- Node.js의 주요 특징에 대해 설명해주세요.
+- Node와 Element의 차이에 대해 설명해주세요.
+- npm install과 npm ci의 차이점에 대해 설명해주세요.
+- OSI 7계층에 대해 설명해주세요.
+- Progressive Partial Rendering(PPR)에 대해 설명해주세요.
+- Promise의 resolve()와 fulfilled에 대해 설명해주세요.
+- React의 리렌더링 과정에 대해 설명해주세요.
+- React의 Error Boundary는 왜 비동기 에러를 잡지 못하나요?
+- reflow와 repaint의 차이점에 대해 설명해주세요.
+- requestAnimationFrame에 대해 설명해주세요.
+- Reset CSS와 Normalize CSS가 무엇인가요?
+- script 태그에서 async와 defer의 차이점에 대해 설명해주세요.
+- Server Action이란 무엇인가요?
+- SSR(Server Side Rendering)에 대해 설명해주세요.
+- stale-while-revalidate에 대해 설명해주세요.
+- Storybook을 알고 계신가요? Storybook이란 무엇인지 설명해주세요.
+- Streaming SSR에 관하여 설명해주세요.
+- Tanstack Query를 사용하는 이유를 설명해주세요.
+- tanstack-query에서 stale time과 gc time의 차이점에 대해 설명해주세요.
+- TCP 3-way handshake 과정에 대해 설명해주세요.
+- TDD란 무엇인지 설명해주세요.
+- TLS 핸드셰이크 과정에 대해 설명해주세요.
+- undefined와 null의 차이점에 대해 설명해주세요.
+- useEffect가 호출되는 시점에 대해 설명해주세요.
+- useEffect를 이용하여 로딩 상태 관리하는 방법과 Suspense를 활용하는 방법에 대한 차이점을 설명해주세요.
+- useEffect와 useLayoutEffect의 차이점에 대해 설명해주세요.
+- User-Agent에 대해 설명해주세요.
+- useRef는 언제 사용하나요?
+- Virtual DOM에 대해 설명해주세요.
+- webpack, rollup과 같은 번들러는 왜 필요한지 설명해주세요.
+- XSS 공격이란 무엇이며, 프론트엔드에서 이를 방어하기 위한 방법을 설명해주세요.
+- Yarn과 Yarn Berry의 차이점에 대해 설명해주세요.
