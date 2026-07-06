@@ -1,5 +1,5 @@
 # ask-cs
-<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/8cce4549-949a-40bc-b858-6ec148413805" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/8cce4549-949a-40bc-b858-6ec148413805" />
 
 > 질문을 중심으로 CS 지식을 정리하는 아카이브입니다. 실제 면접에서 받았거나, 받을 수 있는 질문을 기준으로 CS 개념을 정리합니다.
 
