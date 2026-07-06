@@ -133,12 +133,6 @@ MainActivity -> DetailActivity -> Back -> MainActivity 이렇게 될까?
 
 ---
 
-## 실무 연결
-
-해당 개념이 백엔드 개발, 장애 대응, 성능 개선, 시스템 설계에서 어떻게 쓰이는지 작성합니다.
-
----
-
 ## 참고 자료
 
 - [tasks-and-back-stack](https://developer.android.com/guide/components/activities/tasks-and-back-stack?utm_source=chatgpt.com&hl=ko)
