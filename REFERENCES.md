@@ -32,8 +32,8 @@
   - [Frontend 카테고리 기준 목차](https://github.com/maeil-mail/maeil-mail-contents/blob/main/frontend/toc-category.md)
   - [Frontend 컨텐츠 디렉터리](https://github.com/maeil-mail/maeil-mail-contents/tree/main/frontend/contents)
 - 로컬 인덱스:
-  - [Maeil Mail Backend 질문 인덱스](references/maeil-mail-backend.md)
-  - [Maeil Mail Frontend 질문 인덱스](references/maeil-mail-frontend.md)
+  - [Maeil Mail Backend 질문 인덱스](backend/maeil-mail.md)
+  - [Maeil Mail Frontend 질문 인덱스](frontend/maeil-mail.md)
 - 활용 방식:
   - 백엔드 질문은행의 누락 주제 점검
   - 프론트엔드/웹 협업 질문 보강
@@ -53,7 +53,7 @@
   - System Design: 4개 아티클
   - 전체: 58개 아티클
 - 로컬 인덱스:
-  - [Dev Letter 아티클 인덱스](references/dev-letter.md)
+  - [Dev Letter 아티클 인덱스](backend/dev-letter.md)
 - 활용 방식:
   - 시각화가 필요한 CS 주제 후보 선정
   - 면접 질문의 꼬리 질문과 실무 연결 보강
