@@ -10,8 +10,6 @@
 ## Backend Core
 
 - [Backend](backend/README.md)
-  - [Maeil Mail 질문 인덱스](backend/maeil-mail.md)
-  - [Dev Letter 아티클 인덱스](backend/dev-letter.md)
 - [Database](database/README.md)
 - [Network](network/README.md)
 - [Operating System](operating-system/README.md)
@@ -30,7 +28,6 @@
 ## Platform
 
 - [Frontend](frontend/README.md)
-  - [Maeil Mail 질문 인덱스](frontend/maeil-mail.md)
 - [Android](android/README.md)
 
 ## Etc

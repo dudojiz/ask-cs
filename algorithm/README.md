@@ -11,3 +11,7 @@
 - 정렬 알고리즘에는 어떤 것들이 있나요?
 - greedy 알고리즘은 언제 사용할 수 있나요?
 - dynamic programming이란 무엇인가요?
+
+## 레퍼런스 기반 질문 후보
+
+- [시간 복잡도와 공간 복잡도의 차이점은 무엇인가요?](https://github.com/maeil-mail/maeil-mail-contents/blob/main/backend/contents/be-104.md) (maeil-mail)
