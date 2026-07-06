@@ -30,10 +30,10 @@
 * [Frontend](frontend/README.md)
 * [React](/broken/pages/HQZuLDxefivkLVFov1ty)
 
-## Mobile
+## Android
 
 * [Android](android/README.md)
-  * [Activity가 Single 인스턴스로 유지되려면 어떻게 해야될까?](mobile/android/activity-single.md)
+  * [Activity가 Single 인스턴스로 유지되려면 어떻게 해야될까?](mobile/android/activity-single-instance.md)
 
 ## ETC
 
