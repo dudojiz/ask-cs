@@ -33,7 +33,7 @@
 ## Android
 
 * [Android](android/README.md)
-  * [Activity가 Single 인스턴스로 유지되려면 어떻게 해야될까?](android/android/activity-single.md)
+  * [Activity가 Single 인스턴스로 유지되려면 어떻게 해야될까?](android/activity-single-instance.md)
 
 ## ETC
 
