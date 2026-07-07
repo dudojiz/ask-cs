@@ -2,6 +2,13 @@
 
 백엔드 면접에서 자주 다루는 데이터베이스 질문을 정리합니다.
 
+## 하위 문서
+
+- [RDB](rdb/README.md)
+- [SQL](sql/README.md)
+- [NoSQL](nosql/README.md)
+- [Database Design](database-design/README.md)
+
 ## 질문 목록
 
 - 트랜잭션이란 무엇인가요?
