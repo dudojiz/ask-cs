@@ -48,7 +48,6 @@ ask-cs
 │   └── system-design
 ├── mobile
 │   ├── android
-│   │   └── activity-single-instance.md
 │   ├── flutter
 │   ├── ios
 │   └── reactnative
@@ -61,7 +60,6 @@ ask-cs
 │   ├── oop
 │   └── testing
 └── etc
-    └── undefined.md
 ```
 
 ## 내용 작성 규칙
@@ -72,7 +70,7 @@ ask-cs
 
 ## 파일 이름 규칙
 
-파일 이름은 실제 면접에서 나올 수 있는 형태를 영어 소문자와 하이픈을 사용해 작성합니다.
+파일 이름은 영어 소문자와 하이픈을 사용해 작성합니다.
 
 ```test
 process-vs-thread.md
