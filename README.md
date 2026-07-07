@@ -12,18 +12,10 @@ ask-cs
 ├── README.md
 ├── SUMMARY.md
 ├── TEMPLATE.md
-├── QUESTION_BANK.md
 ├── REFERENCES.md
 ├── backend
 │   ├── basic
-│   │   ├── authentication.md
-│   │   ├── json-rpc.md
-│   │   ├── rest-api.md
-│   │   └── session-cookie-jwt.md
 │   ├── spring
-│   ├── api-design.md
-│   ├── jpa.md
-│   └── messaging.md
 ├── computer-science
 │   ├── algorithm
 │   ├── computer-architecture
