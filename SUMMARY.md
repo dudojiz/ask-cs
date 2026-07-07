@@ -6,85 +6,61 @@
 * [문서 템플릿](TEMPLATE.md)
 * [참고 repo](REFERENCES.md)
 
----
+***
 
 * [Computer Science](computer-science/README.md)
-  * [Data Structure](computer-science/data-structure/README.md)
-  * [Algorithm](computer-science/algorithm/README.md)
-  * [Computer Architecture](computer-science/computer-architecture/README.md)
-  * [Operating System](computer-science/operating-system/README.md)
-  * [Network](computer-science/network/README.md)
+  * [Data Structure](computer-science/data-structure.md)
+  * [Algorithm](computer-science/algorithm.md)
+  * [Computer Architecture](computer-science/computer-architecture.md)
+  * [Operating System](computer-science/operating-system.md)
+  * [Network](computer-science/network.md)
   * [Programming Language](computer-science/programming-language/README.md)
-    * [Java](computer-science/programming-language/java/README.md)
-    * [Kotlin](computer-science/programming-language/kotlin/README.md)
-    * [C / C++](computer-science/programming-language/c-c++/README.md)
-    * [Rust](computer-science/programming-language/rust/README.md)
-    * [Go](computer-science/programming-language/go/README.md)
-
----
-
+    * [Java](computer-science/programming-language/java.md)
+    * [Kotlin](computer-science/programming-language/kotlin.md)
+    * [C / C++](computer-science/programming-language/c-c++.md)
+    * [Rust](computer-science/programming-language/rust.md)
+    * [Go](computer-science/programming-language/go.md)
 * [Database](database/README.md)
-  * [RDB](database/rdb/README.md)
-  * [SQL](database/sql/README.md)
-  * [NoSQL](database/nosql/README.md)
-  * [Database Design](database/database-design/README.md)
-
----
-
+  * [RDB](database/rdb.md)
+  * [SQL](database/sql.md)
+  * [NoSQL](database/nosql.md)
+  * [Database Design](database/database-design.md)
 * [Mobile](mobile/README.md)
   * [Android](mobile/android/README.md)
     * [Activity가 Single 인스턴스로 유지되려면 어떻게 해야될까?](mobile/android/activity-single.md)
-  * [Flutter](mobile/flutter/README.md)
-  * [iOS](mobile/ios/README.md)
-  * [ReactNative](mobile/react-native/README.md)
-
----
-
+  * [Flutter](mobile/flutter.md)
+  * [iOS](mobile/ios.md)
+  * [ReactNative](mobile/reactnative.md)
 * [Backend](backend/README.md)
   * [Basic](backend/basic/README.md)
     * [REST API](backend/basic/rest-api.md)
     * [JSON-RPC](backend/basic/json-rpc.md)
     * [Authentication](backend/basic/authentication.md)
     * [Session / Cookie / JWT](backend/basic/session-cookie-jwt.md)
-  * [Spring](backend/spring/README.md)
-  * [JPA](backend/jpa/README.md)
-  * [API Design](backend/api-design/README.md)
-  * [Messaging](backend/messaging/README.md)
-
----
-
+  * [Spring](backend/spring.md)
+  * [JPA](backend/jpa.md)
+  * [API Design](backend/api-design.md)
+  * [Messaging](backend/messaging.md)
 * [Frontend](frontend/README.md)
-  * [HTML / CSS](frontend/html-css/README.md)
-  * [JavaScript](frontend/javascript/README.md)
-  * [TypeScript](frontend/typescript/README.md)
-  * [React](frontend/react/README.md)
-
----
-
+  * [HTML / CSS](frontend/html-css.md)
+  * [JavaScript](frontend/javascript.md)
+  * [TypeScript](frontend/typescript.md)
+  * [React](frontend/react.md)
 * [Infrastructure & DevOps](infrastructure-and-devops/README.md)
-  * [Linux](infrastructure-and-devops/linux/README.md)
-  * [Docker & Container](infrastructure-and-devops/docker-and-container/README.md)
+  * [Linux](infrastructure-and-devops/linux.md)
+  * [Docker & Container](infrastructure-and-devops/docker-and-container.md)
   * [Cloud](infrastructure-and-devops/cloud/README.md)
-    * [AWS](infrastructure-and-devops/cloud/aws/README.md)
-    * [GCP](infrastructure-and-devops/cloud/gcp/README.md)
-  * [CI/CD](infrastructure-and-devops/ci-cd/README.md)
-  * [System Design](infrastructure-and-devops/system-design/README.md)
-
----
-
+    * [AWS](infrastructure-and-devops/cloud/aws.md)
+    * [GCP](infrastructure-and-devops/cloud/gcp.md)
+  * [CI/CD](infrastructure-and-devops/ci-cd.md)
+  * [System Design](infrastructure-and-devops/system-design.md)
 * [Software Engineering](software-engineering/README.md)
-  * [OOP](software-engineering/oop/README.md)
-  * [Design Pattern](software-engineering/design-pattern/README.md)
-  * [Clean Code](software-engineering/clean-code/README.md)
-  * [Architecture](software-engineering/architecture/README.md)
-  * [Testing](software-engineering/testing/README.md)
-  * [Git](software-engineering/git/README.md)
-
----
-
+  * [OOP](software-engineering/oop.md)
+  * [Design Pattern](software-engineering/design-pattern.md)
+  * [Clean Code](software-engineering/clean-code.md)
+  * [Architecture](software-engineering/architecture.md)
+  * [Testing](software-engineering/testing.md)
+  * [Git](software-engineering/git.md)
 * [Security](security/README.md)
-
----
-
 * [ETC](etc/README.md)
-  * [좋은 글 모음](etc/help.md)
+  * [좋은 글 모음](etc/undefined.md)
