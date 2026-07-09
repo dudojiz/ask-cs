@@ -47,6 +47,7 @@
     * [GCP](infrastructure-and-devops/cloud/gcp/README.md)
   * [CI/CD](infrastructure-and-devops/ci-cd/README.md)
   * [System Design](infrastructure-and-devops/system-design/README.md)
+    * [캐시 스탬피드(Cache Stampede)는 왜 생기고, 어떻게 막는가?](infrastructure-and-devops/system-design/cache-stampede.md)
 * [Software Engineering](software-engineering/README.md)
   * [OOP](software-engineering/oop/README.md)
   * [Design Pattern](software-engineering/design-pattern/README.md)
