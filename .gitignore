@@ -1,0 +1,30 @@
+# 이 저장소에는 cs-tutor 세션 이후 산출된 CS 문답 결론만 커밋한다.
+# 그 외 에이전트/툴링 설정, OS·에디터 부산물은 추적하지 않는다.
+
+# 에이전트 / 스킬 정의 (툴링)
+.claude/
+.agents/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 에디터
+.idea/
+.vscode/
+*.swp
+*~
+
+# 로그 / 임시 파일
+*.log
+tmp/
+
+# agent 질의응답 / 세션 기록 (커밋 대상은 cs-tutor 산출 문서뿐)
+.transcripts/
+transcripts/
+sessions/
+*.session.md
+*.chat.md
+*.transcript.md
+*conversation*.md
+*.jsonl
