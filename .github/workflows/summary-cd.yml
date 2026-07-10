@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  update-summary:
+  update-generated-markdown:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Update SUMMARY.md
+      - name: Update generated markdown files
         run: python scripts/update_summary.py
 
       - name: Commit and push if changed
@@ -35,6 +35,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add SUMMARY.md
-          git commit -m "chore(summary): auto update summary"
+          git add -u .
+          git commit -m "chore(summary): auto update generated markdown"
           git push

@@ -9,6 +9,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SUMMARY_PATH = REPO_ROOT / "SUMMARY.md"
 QUESTION_HEADER = "## 질문"
+QUESTION_LIST_HEADER = "## 질문 목록"
 READ_ME_NAME = "README.md"
 ROOT_EXCLUDED = {"README.md", "SUMMARY.md", "TEMPLATE.md", "REFERENCES.md", "AGENTS.md"}
 
@@ -50,6 +51,19 @@ def extract_title(path: Path) -> str | None:
 
 def leading_spaces(line: str) -> int:
     return len(line) - len(line.lstrip(" "))
+
+
+def normalize_link_path(link: str) -> str:
+    return str(Path(link)).replace("\\", "/")
+
+
+def iter_folder_question_files(folder: Path) -> list[Path]:
+    files: list[Path] = []
+    for path in sorted(folder.glob("*.md"), key=lambda p: p.name):
+        if path.name == READ_ME_NAME:
+            continue
+        files.append(path)
+    return files
 
 
 def build_missing_entries(summary_lines: list[str]) -> dict[str, list[tuple[str, str]]]:
@@ -127,24 +141,107 @@ def update_summary(content: str) -> str:
     return "\n".join(lines) + "\n"
 
 
+def build_missing_readme_entries(readme_path: Path, lines: list[str]) -> tuple[int, int, list[tuple[str, str]]]:
+    section_idx = -1
+    for i, line in enumerate(lines):
+        if line.strip() == QUESTION_LIST_HEADER:
+            section_idx = i
+            break
+
+    if section_idx == -1:
+        return -1, -1, []
+
+    section_end = len(lines)
+    for i in range(section_idx + 1, len(lines)):
+        if lines[i].startswith("## "):
+            section_end = i
+            break
+
+    existing_links = set()
+    link_pattern = re.compile(r"\(([^)]+)\)")
+    for line in lines[section_idx + 1 : section_end]:
+        for match in link_pattern.findall(line):
+            existing_links.add(normalize_link_path(match))
+
+    missing: list[tuple[str, str]] = []
+    for file_path in iter_folder_question_files(readme_path.parent):
+        rel_name = file_path.name
+        if rel_name in existing_links:
+            continue
+        title = extract_title(file_path)
+        if not title:
+            continue
+        missing.append((title, rel_name))
+
+    return section_idx, section_end, missing
+
+
+def update_readme_question_list(readme_path: Path, content: str) -> str:
+    lines = content.splitlines()
+    section_idx, section_end, missing_entries = build_missing_readme_entries(readme_path, lines)
+    if section_idx == -1 or not missing_entries:
+        return content if content.endswith("\n") else content + "\n"
+
+    insert_idx = section_end
+    while insert_idx > section_idx + 1 and lines[insert_idx - 1].strip() == "":
+        insert_idx -= 1
+
+    new_lines = [f"- [{title}]({path})" for title, path in missing_entries]
+    lines[insert_idx:insert_idx] = new_lines
+    return "\n".join(lines) + "\n"
+
+
+def iter_readme_files() -> list[Path]:
+    readmes: list[Path] = []
+    for path in REPO_ROOT.rglob(READ_ME_NAME):
+        if ".git" in path.parts or ".github" in path.parts:
+            continue
+        rel = path.relative_to(REPO_ROOT)
+        if rel.parent == Path("."):
+            continue
+        readmes.append(path)
+    return sorted(readmes, key=lambda p: str(p.relative_to(REPO_ROOT)))
+
+
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Update SUMMARY.md from question markdown files.")
-    parser.add_argument("--check", action="store_true", help="Exit with failure if SUMMARY.md needs updates.")
+    parser = argparse.ArgumentParser(description="Update SUMMARY.md and README question lists from question markdown files.")
+    parser.add_argument("--check", action="store_true", help="Exit with failure if generated files need updates.")
     args = parser.parse_args()
 
     original = SUMMARY_PATH.read_text(encoding="utf-8")
     updated = update_summary(original)
+    updated_readmes: list[tuple[Path, str]] = []
+    out_of_date_files: list[str] = []
+
+    for readme_path in iter_readme_files():
+        original_readme = readme_path.read_text(encoding="utf-8")
+        updated_readme = update_readme_question_list(readme_path, original_readme)
+        if original_readme != updated_readme:
+            out_of_date_files.append(str(readme_path.relative_to(REPO_ROOT)).replace("\\", "/"))
+            updated_readmes.append((readme_path, updated_readme))
 
     if args.check:
-        if original != updated:
-            print("SUMMARY.md is out of date. Run: python scripts/update_summary.py")
+        if original != updated or out_of_date_files:
+            print("Generated markdown files are out of date. Run: python scripts/update_summary.py")
+            if original != updated:
+                print("- SUMMARY.md")
+            for rel_path in out_of_date_files:
+                print(f"- {rel_path}")
             return 1
-        print("SUMMARY.md is up to date.")
+        print("SUMMARY.md and README question lists are up to date.")
         return 0
 
+    changed = False
     if original != updated:
         SUMMARY_PATH.write_text(updated, encoding="utf-8")
-        print("SUMMARY.md updated.")
+        changed = True
+
+    for readme_path, updated_content in updated_readmes:
+        readme_path.write_text(updated_content, encoding="utf-8")
+        changed = True
+
+    if changed:
+        print("Generated markdown files updated.")
     else:
         print("No changes needed.")
     return 0

@@ -19,5 +19,5 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Check SUMMARY.md sync
+      - name: Check generated markdown sync
         run: python scripts/update_summary.py --check
