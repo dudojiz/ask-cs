@@ -1,7 +1,12 @@
-name: Summary CI
+name: Generated Markdown CI (SUMMARY + non-root README)
 
 on:
   pull_request:
+    paths:
+      - "**/*.md"
+      - "scripts/update_summary.py"
+      - ".github/workflows/summary-ci.yml"
+      - ".github/workflows/summary-cd.yml"
   workflow_dispatch:
 
 permissions:
@@ -19,5 +24,27 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Check SUMMARY.md sync
-        run: python scripts/update_summary.py --check
+      - name: Check generated markdown sync
+        id: summary_check
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          python scripts/update_summary.py --check | tee summary-check.log
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -p 'test_*.py'
+
+      - name: Append check failure details to job summary
+        if: steps.summary_check.outcome == 'failure'
+        run: |
+          {
+            echo "## Generated markdown sync check failed"
+            echo ""
+            echo '```text'
+            cat summary-check.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Fail workflow when generated markdown is out of date
+        if: steps.summary_check.outcome == 'failure'
+        run: exit 1

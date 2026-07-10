@@ -9,4 +9,5 @@
 - 메시지 큐를 사용하면 어떤 장단점이 있나요?
 - 단일 장애 지점은 어떻게 줄일 수 있나요?
 - eventual consistency를 허용해도 되는 기준은 무엇인가요?
+- [캐시 스탬피드(Cache Stampede)는 왜 생기고, 어떻게 막는가?](cache-stampede.md)
 
