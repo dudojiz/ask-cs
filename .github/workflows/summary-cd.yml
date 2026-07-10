@@ -1,9 +1,14 @@
-name: Summary CD
+name: Generated Markdown CD (SUMMARY + non-root README)
 
 on:
   push:
     branches:
       - "**"
+    paths:
+      - "**/*.md"
+      - "scripts/update_summary.py"
+      - ".github/workflows/summary-ci.yml"
+      - ".github/workflows/summary-cd.yml"
   workflow_dispatch:
 
 permissions:
