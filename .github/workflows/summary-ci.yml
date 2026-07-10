@@ -25,4 +25,26 @@ jobs:
           python-version: "3.11"
 
       - name: Check generated markdown sync
-        run: python scripts/update_summary.py --check
+        id: summary_check
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          python scripts/update_summary.py --check | tee summary-check.log
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -p 'test_*.py'
+
+      - name: Append check failure details to job summary
+        if: steps.summary_check.outcome == 'failure'
+        run: |
+          {
+            echo "## Generated markdown sync check failed"
+            echo ""
+            echo '```text'
+            cat summary-check.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Fail workflow when generated markdown is out of date
+        if: steps.summary_check.outcome == 'failure'
+        run: exit 1

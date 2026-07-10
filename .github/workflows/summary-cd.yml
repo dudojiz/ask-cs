@@ -10,14 +10,29 @@ on:
       - ".github/workflows/summary-ci.yml"
       - ".github/workflows/summary-cd.yml"
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "Execution mode (check-only or apply)"
+        required: true
+        default: apply
+        type: choice
+        options:
+          - check-only
+          - apply
 
 permissions:
   contents: write
 
+concurrency:
+  group: summary-cd-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   update-generated-markdown:
-    if: github.actor != 'github-actions[bot]'
+    if: github.actor != 'github-actions[bot]' && !startsWith(github.event.head_commit.message || '', 'chore(summary):')
     runs-on: ubuntu-latest
+    env:
+      MODE: ${{ github.event.inputs.mode || 'apply' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,9 +45,15 @@ jobs:
           python-version: "3.11"
 
       - name: Update generated markdown files
-        run: python scripts/update_summary.py
+        run: |
+          if [ "$MODE" = "check-only" ]; then
+            python scripts/update_summary.py --check
+          else
+            python scripts/update_summary.py
+          fi
 
       - name: Commit and push if changed
+        if: env.MODE == 'apply'
         run: |
           if git diff --quiet; then
             echo "No changes."
@@ -40,6 +61,10 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -u .
+          git add -- SUMMARY.md ':(glob)**/README.md'
+          if git diff --cached --quiet; then
+            echo "No allowed generated file changes."
+            exit 0
+          fi
           git commit -m "chore(summary): auto update generated markdown"
           git push
